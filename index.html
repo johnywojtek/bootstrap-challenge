@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+	<!-- navigation -->
+	<nav class="navbar navbar-expand-md navbar-light bg-transparent">
+		<div class="container-fluid">
+			<a href="#" class="navbar-brand"> <img src="img/logo.png" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link">home</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">shop</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">journal</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">elements</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">pages</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link"><img src="img/Cart.png" alt="shopping cart"></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Image slider -->
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
+				<div class="carousel-caption">
+					<h1 class="text-dark">Sky Planet</h1>
+					<h3 class="carousel-heading text-black-50">Shop now</h3>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img/slider-2.jpg " alt="Second slide">
+				<div class="carousel-caption">
+					<h1 class="text-dark">Sky Planet</h1>
+					<h3 class="carousel-heading text-black-50">Shop now</h3>
+				</div>
+			</div>
+
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="icon-carousel">
+				< </span> <span class="sr-only">Previous
+			</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="icon-carousel">></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+
+	<div class="contaier-fluid main">
+		<div class="row">
+			<!-- Aside -->
+			<div class="col-md-0 col-lg-4 aside">
+				<div class="list">
+					<div class="categories">
+						<h3 class="heading">Categories</h3>
+						<ul>
+							<li>All products</li>
+							<li>Living</li>
+							<li>Dining</li>
+							<li>Furniture</li>
+							<li>Lighting</li>
+							<li>Technics</li>
+							<li>Accessories</li>
+						</ul>
+					</div>
+				</div>
+				<hr class="spacing">
+				<div class="filter">
+					<h3 class="heading">Filter by</h3>
+					<div class="price">
+						<h4 class="heading-secondary">Price</h4>
+						<input type="range">
+						<div>
+							<input type="number" class="border">
+							<input type="number" class="border">
+							<button class="border">Filter</button>
+						</div>
+					</div>
+					<div class="color">
+						<h4 class="heading-secondary">Color</h4>
+						<div class="d-flex">
+							<div class="square bg-secondary"></div>
+							<div class="square bg-light border"></div>
+							<div class="square bg-danger"></div>
+							<div class="square bg-primary
+							"></div>
+							<div class="square bg-success"></div>
+						</div>
+					</div>
+					<div class="list">
+						<h4 class="heading-secondary">Size</h4>
+						<ul>
+							<li>Small</li>
+							<li>Medium</li>
+							<li>Large</li>
+						</ul>
+					</div>
+					<div class="list">
+						<h4 class="heading-secondary">Brands</h4>
+						<ul>
+							<li>Banshu Hamono</li>
+							<li>Bower</li>
+							<li>Braun</li>
+							<li>Elevenplus</li>
+							<li>Field</li>
+							<li>Henry Wilson</li>
+							<li>Menu</li>
+						</ul>
+					</div>
+					<hr class="spacing">
+					<div class="popular">
+						<h4>Popular Tags</h4>
+						<p class="text-black-50">Simple, Minimalism, Funiture, White, Black, Accessories</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main section photos -->
+
+			<div class="col-xm-12 col-lg-8">
+				<div class="d-flex justify-content-between">
+					<p class="heading-sort">Sort by: A-Z &darr;</p>
+					<p class="heading-sort">Showing 1-6 of 24 results</p>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card bg-dark">
+							<img class="card-img" src="img/product-1.jpg" alt="Card image">
+							<div class="card-img-overlay d-flex flex-column justify-content-end">
+								<p class="card-text text-body">Bottle Humidifier</p>
+								<div class="d-flex justify-content-between">
+									<p class="card-text text-dark">$69.00</p>
+									<p class="card-text text-dark">Add to card</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card bg-dark">
+							<img class="card-img" src="img/product-2.jpg" alt="Card image">
+							<div class="card-img-overlay d-flex flex-column justify-content-end">
+								<p class="card-text text-body">Flower Scissors</p>
+								<div class="d-flex justify-content-between">
+									<p class="card-text text-dark">$149.00</p>
+									<p class="card-text text-dark">Add to card</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card bg-dark">
+							<img class="card-img" src="img/product-3.jpg" alt="Card image">
+							<div class="card-img-overlay d-flex flex-column justify-content-end">
+								<p class="card-text text-body">Grey Watch</p>
+								<div class="d-flex justify-content-between">
+									<p class="card-text text-dark">$215.00</p>
+									<p class="card-text text-dark">Add to card</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card bg-dark">
+							<img class="card-img" src="img/product-4.jpg" alt="Card image">
+							<div class="card-img-overlay d-flex flex-column justify-content-end">
+								<p class="card-text text-body">Sweeper and Funnel</p>
+								<div class="d-flex justify-content-between">
+									<p class="card-text text-dark">$59.00</p>
+									<p class="card-text text-dark">Add to card</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card bg-dark">
+							<img class="card-img" src="img/product-5.jpg" alt="Card image">
+							<div class="card-img-overlay d-flex flex-column justify-content-end">
+								<p class="card-text text-body">White Bulb</p>
+								<div class="d-flex justify-content-between">
+									<p class="card-text text-dark">$349.00</p>
+									<p class="card-text text-dark">Add to card</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card bg-dark">
+							<img class="card-img" src="img/product-6.jpg" alt="Card image">
+							<div class="card-img-overlay d-flex flex-column justify-content-end">
+								<p class="card-text text-body">Teapot</p>
+								<div class="d-flex justify-content-between">
+									<p class="card-text text-dark">$55.00</p>
+									<p class="card-text text-dark">Add to card</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- discord -->
+
+	<div class="container-fluid">
+		<div class="row jumbotron justify-content-center">
+			<div class="text-right">
+				<p class="lead">
+					Get Discound 35% off
+				</p>
+			</div>
+			<div class="my-auto">
+				<input class="email-input" type="text" placeholder="Enter your email...">
+				<input class="btn-send" type="submit" value="Send">
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="container-fluid footer">
+		<div class="row justify-content-between">
+			<div class="d-flex">
+				<div class="text-black-50 copyright">&copy; 2017 Maison. All rights reserved</div>
+			</div>
+			<div class="d-flex">
+				<ul class="nav footer-nav">
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#">Journal</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link text-dark" href="#">About Us</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link text-dark" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+
+</html>
